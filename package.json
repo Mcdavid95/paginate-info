@@ -1,0 +1,26 @@
+{
+  "name": "paginate-info",
+  "version": "1.0.1",
+  "description": "A simple module to paginate your arrays and calculate limit and offset",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/paginator.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mcdavid95/paginator.git"
+  },
+  "keywords": [
+    "pagination",
+    "apis"
+  ],
+  "author": "mcdavid95",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mcdavid95/paginator/issues"
+  },
+  "homepage": "https://github.com/Mcdavid95/paginator#readme",
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  }
+}
