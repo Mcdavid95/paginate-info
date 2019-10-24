@@ -1,13 +1,13 @@
 /--- Start of MongoDB example --- /
 
 /**
-   * @function getOneQuestion
+   * @function getAll
    * @param {Object} req request object
    * @param {Object} res response object
    * @returns {Object} response object
-   * @description gets one question with the id supplied to the params
+   * @description gets all available results
    */
-  const getAllQuestions = async (req, res) => {
+  const getAll = async (req, res) => {
     const {
       query: { currentPage, pageLimit }
     } = req;
@@ -31,12 +31,12 @@
 /** Start of PostgreSQL-SQL(sequelize) implementation**/
 
   /**
- * @function getUserRequest
+ * @function getAll
  * @param {Object} req - server request
  * @param {Object} res - server response
  * @returns {Object} - custom response
 */
-const getUserRequest = async (req, res) => {
+const getAll = async (req, res) => {
   try {
     const {
       query: {
