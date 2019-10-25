@@ -24,7 +24,8 @@ Installation is done using the npm install command:
 - calculates total number of pages.
 
 ## API
-- ### calulateLimitAndOffset
+- **calulateLimitAndOffset**
+
   calculates the offset and limit
 
 | Params                 | Type  | Description 
@@ -40,7 +41,8 @@ Installation is done using the npm install command:
 |  limit  |  number | maximum number of items to return for the current page, defaults to 20
 |
 
-- ### paginate
+- **paginate**
+
   returns the pagination info
 
 | Params                 | Type  | Description 
