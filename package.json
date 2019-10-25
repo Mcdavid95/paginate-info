@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mcdavid95/paginator.git"
+    "url": "git+https://github.com/Mcdavid95/paginate-info.git"
   },
   "keywords": [
     "pagination",
@@ -17,9 +17,9 @@
   "author": "mcdavid95",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mcdavid95/paginator/issues"
+    "url": "https://github.com/Mcdavid95/paginate-info/issues"
   },
-  "homepage": "https://github.com/Mcdavid95/paginator#readme",
+  "homepage": "https://github.com/Mcdavid95/paginate-info#readme",
   "devDependencies": {
     "mocha": "^6.2.2"
   }
