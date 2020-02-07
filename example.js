@@ -15,8 +15,8 @@
       const count = await model.estimatedDocumentCount();
       const { limit, offset } = calculateLimitAndOffset(page, pageLimit);
       const rows = await model.find({})
+        .skip(offset)
         .limit(limit)
-        .skip(offset);
       const meta = paginate(currentPage, count, rows, pageLimit);
       return handleServerResponse(res, 200, { rows, meta });
     } catch (error) {
