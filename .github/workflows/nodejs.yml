@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: npm install nyc -g
     - name: npm install, build, and test
       run: |
         npm ci

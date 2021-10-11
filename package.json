@@ -4,7 +4,7 @@
   "description": "A simple module to paginate your arrays and calculate limit and offset",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/paginator.test.js"
+    "test": "nyc --reporter=lcov --reporter=text --reporter=text-summary mocha tests/paginator.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Mcdavid95/paginate-info#readme",
   "devDependencies": {
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "nyc": "^15.1.0"
   }
 }
