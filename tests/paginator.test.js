@@ -9,6 +9,12 @@ describe('Paginator', () => {
     assert.equal(offset, 10)
     done()
   })
+  it('should calculate limit and offset with default parameters', done => {
+    const { limit, offset } = calculateLimitAndOffset()
+    assert.equal(limit, 20)
+    assert.equal(offset, 0)
+    done()
+  })
   it('should paginate an array and return pagination info', done => {
     const count = data.length
     const { limit, offset } = calculateLimitAndOffset(2)
@@ -19,6 +25,11 @@ describe('Paginator', () => {
     assert.equal(meta.currentPage, 2)
     assert.equal(meta.pageSize, 20)
     assert.equal(meta.pageCount, 5)
+    done()
+  })
+  it('should paginate an array and return pagination info', done => {
+    const meta = paginate()
+    assert.equal(meta, null)
     done()
   })
 })
