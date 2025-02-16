@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/Mcdavid95/paginate-info#readme",
   "devDependencies": {
-    "mocha": "^6.2.2"
+    "mocha": "^10.2.0"
   }
 }
