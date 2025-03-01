@@ -6,7 +6,7 @@ const { calculateLimitAndOffset, paginate } = require('paginate-info')
 
 const { limit, offset } = calculateLimitAndOffset(2, 20)
 
-// limit = 20, offset = 20
+// limit = 2, offset = 20
 ```
 
 ### Installation
