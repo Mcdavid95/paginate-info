@@ -19,10 +19,10 @@ const calculateLimitAndOffset = (currentPage, pageLimit = 20) => {
  * @param {number} pageLimit number of items per page/request
  * @returns {object} return the meta for pagination
  */
-const paginate = (currentPage, count, rows, pageLimit = 20) => {
+const paginate = (currentPage, count, rows) => {
   const meta = {
     currentPage: Number(currentPage) || 1,
-    pageCount: Math.ceil(count / Number(pageLimit)),
+    pageCount: Math.ceil(count / Number(rows.length)),
     pageSize: rows.length,
     count
   };
